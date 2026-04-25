@@ -11,11 +11,11 @@ LDFLAGS =
 # Build targets
 all: cheat anticheat
 
-cheat: cheat.cpp
+cheat: cheat-submit.cpp
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o cheat $<
 	ln -sf cheat code
 
-anticheat: anticheat.cpp
+anticheat: anticheat-submit.cpp
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o anticheat $<
 	ln -sf anticheat code
 
